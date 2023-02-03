@@ -1,0 +1,21 @@
+.empty-list {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50%;
+  text-align: center;
+
+  &__text {
+    font-size: 50px;
+    font-weight: 300;
+    color: #bdbdbd;
+
+    span {
+      color: #ffffff;
+    }
+
+    &--sub {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@media (max-width: 690px) {
+  .shoping-group-wrapper {
+    padding: 10px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 630px) {
+  .header__title {
+    font-size: 5.5vh;
+    text-align: center;
+  }
+
+  .shoping-group-wrapper {
+    justify-content: center;
+  }
+
+  .shoping-group {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .empty-list {
+
+    &__text {
+      font-size: 5.5vh;
+
+      &--sub {
+        font-size: 2vh;
+      }
+    }
+  }
+
+  .add-shoping-list-btn {
+    display: block;
+    position: relative;
+    transform: none;
+
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    left: 0;
+    bottom: 0;
+
+    width: 60px;
+    height: 60px;
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

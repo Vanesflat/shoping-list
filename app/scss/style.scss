@@ -1,0 +1,41 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #2c2c2c;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 820px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 0 10px;
+}
+
+.shoping-group-wrapper {
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@import "vendor/reset.scss";
+
+//blocks
+@import "blocks/header.scss";
+@import "blocks/main.scss";
+@import "blocks/footer.scss";
+@import "blocks/shoping-group.scss";
+@import "blocks/empty-list.scss";
+
+//media
+@import "media.scss";
