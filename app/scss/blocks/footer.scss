@@ -1,10 +1,11 @@
 .footer {
-  background-color: #363636;
+  background-color: #272727;
+  box-shadow: 0 -5px 15px -5px rgba(0, 0, 0, 0.363);
   text-align: center;
 
   &__text {
     font-weight: 300;
-    color: #bdbdbd;
+    color: #e2e2e2;
     padding: 10px;
   }
 

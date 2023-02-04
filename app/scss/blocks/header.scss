@@ -1,9 +1,11 @@
 .header {
-  background-color: #363636;
+  background-color: #272727;
+  box-shadow: 0 10px 15px 0px rgba(0, 0, 0, 0.363);
+  z-index: 1;
 
   &__title {
     margin: 2vh;
-    color: #bdbdbd;
+    color: #e2e2e2;
     font-size: 50px;
     font-weight: 300;
   }
