@@ -1,26 +1,32 @@
 .shoping-group {
-  background-color: #858585;
-  width: 30%;
+  background-color: #605052da;
+  width: 100%;
   min-width: 190px;
+  max-width: 400px;
   height: 100%;
   padding: 5px;
-  color: #e2e2e2;
+  color: #cecece;
   border-radius: 20px;
-  box-shadow: 0 0 20px 5px #272727;
+  box-shadow: 0 0 20px 5px #292929;
+  transition: all .3s;
+
+  &:hover {
+    transform: scale(1.03);
+  }
 
   &__title {
     margin: 5px;
-    padding: 10px;
-    background-color: #747474;
-    border: 1px solid #535353;
+    padding: 15px;
+    background-color: #605052;
     border-radius: 20px;
-    box-shadow: 0 0 10px 0px #535353;
+    box-shadow: 0 0 10px 0px #2e242c;
     text-align: center;
     font-weight: 700;
     cursor: pointer;
 
     &:hover {
-      border-color: #e7e7e7;
+      box-shadow: 0 0 10px 0px #7e7e7e;
+      color: #ffffff;
     }
   }
 
@@ -34,7 +40,8 @@
   &__item {
     position: relative;
     padding: 10px;
-    border: 1px solid #c0bfbf;
+    margin-bottom: 5px;
+    box-shadow: 0 0 3px 0px #2e242c;
     border-radius: 20px;
     text-align: center;
     cursor: pointer;
@@ -44,8 +51,14 @@
       color: #e2e2e2c5;
     }
 
+    &-text {
+      display: inline-block;
+      max-width: 210px;
+    }
+
     &:hover {
-      background-color: #727272;
+      color: #ffffff;
+      box-shadow: 0 0 5px 0px #2e242c;
     }
   }
 
@@ -56,28 +69,24 @@
   }
 
   &__button {
-    width: 45px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     margin-top: 10px;
     padding: 10px;
-    background-color: #b6b6b6;
-    border: 2px solid #7e7e7e;
+    background-color: #605052;
+    border: none;
     border-radius: 30px;
-    box-shadow: 0px 0px 10px -5px #000000;
+    box-shadow: 0 0 10px 0px #2e242c;
     cursor: pointer;
     position: relative;
     transition: all .3s;
 
     &:not([disabled]):hover {
-      background-color: #9b9b9b;
-
-      svg path {
-        stroke: #ffffff;
-      }
+      background-color: #69585a;
+      box-shadow: 0 0 5px 0px #7e7e7e;
     }
 
     &-add {
-      width: 100%;
 
       svg {
         position: absolute;
@@ -85,23 +94,17 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
-
-      &:hover {
-        svg path {
-          fill: #ffffff;
-        }
-      }
     }
 
     &--inactive {
       background-color: #646464fa;
-      box-shadow: 0 0 0 0;
+      box-shadow: none;
 
       cursor: default;
 
       svg path {
-        fill: #ffffff;
-        stroke: #ffffff;
+        fill: #7c7c7c;
+        stroke: #7c7c7c;
       }
     }
   }
@@ -109,7 +112,7 @@
 
 .counter-btn {
   font-size: 20px;
-  color: #c0bfbf;
+  color: #2e242cd2;
   background: none;
   border: none;
   position: absolute;

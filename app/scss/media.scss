@@ -55,8 +55,12 @@
 }
 
 @media (max-width: 420px) {
-  .header__title {
-    font-size: 35px;
+  .header {
+    padding-top: 50px;
+
+    &__title {
+      font-size: 35px;
+    }
   }
 
   .shoping-group {
