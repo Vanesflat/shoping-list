@@ -3,6 +3,15 @@ body {
   background-color: #1b1b1b;
 }
 
+input {
+  text-align: center;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+}
+
 .wrapper {
   position: absolute;
   top: 50%;
@@ -19,12 +28,16 @@ body {
   padding: 0 10px;
 }
 
+.hidden {
+  display: none;
+}
+
 .shoping-group-wrapper {
   margin: 0 auto;
   padding: 20px;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -36,6 +49,7 @@ body {
 @import "blocks/footer.scss";
 @import "blocks/shoping-group.scss";
 @import "blocks/empty-list.scss";
+@import "blocks/edit-form.scss";
 
 //media
 @import "media.scss";

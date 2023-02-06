@@ -1,7 +1,7 @@
 .shoping-group {
   background-color: #605052da;
   width: 100%;
-  min-width: 190px;
+  min-width: 210px;
   max-width: 400px;
   height: 100%;
   padding: 5px;
@@ -14,9 +14,11 @@
     transform: scale(1.03);
   }
 
-  &__title {
+  &__header {
+    display: flex;
+    justify-content: space-between;
     margin: 5px;
-    padding: 15px;
+    padding: 5px;
     background-color: #605052;
     border-radius: 20px;
     box-shadow: 0 0 10px 0px #2e242c;
@@ -28,6 +30,11 @@
       box-shadow: 0 0 10px 0px #7e7e7e;
       color: #ffffff;
     }
+  }
+
+  &__title {
+    align-self: center;
+    max-width: 210px;
   }
 
   &__list {
@@ -62,21 +69,13 @@
     }
   }
 
-  &__controls {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-  }
-
   &__button {
-    width: 40px;
-    height: 40px;
-    margin-top: 10px;
-    padding: 10px;
+    width: 30px;
+    height: 30px;
     background-color: #605052;
     border: none;
-    border-radius: 30px;
-    box-shadow: 0 0 10px 0px #2e242c;
+    border-radius: 50%;
+    box-shadow: 0 0 15px -5px #2e242c;
     cursor: pointer;
     position: relative;
     transition: all .3s;
@@ -84,16 +83,28 @@
     &:not([disabled]):hover {
       background-color: #69585a;
       box-shadow: 0 0 5px 0px #7e7e7e;
+
+      svg path {
+        stroke: #cecece;
+        fill: #cecece
+      }
     }
 
+    &-close,
     &-add {
-
       svg {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
+    }
+
+    &-add {
+      width: 100%;
+      height: 40px;
+      padding: 10px;
+      border-radius: 30px;
     }
 
     &--inactive {

@@ -1,5 +1,6 @@
 @media (max-width: 710px) {
   .shoping-group-wrapper {
+    flex-wrap: wrap;
     padding: 10px;
     gap: 10px;
   }
@@ -20,6 +21,19 @@
   .shoping-group {
     width: 100%;
     max-width: 300px;
+
+    &__title,
+    &-text {
+      max-width: 150px;
+    }
+  }
+
+  .shoping-group-edit {
+
+    &__title-input,
+    &__item-input {
+      max-width: 160px;
+    }
   }
 
   .empty-list {
@@ -81,8 +95,11 @@
     }
 
     &__button {
-      width: 60px;
+      width: 40px;
       height: 60px;
+      padding: 0;
+      box-shadow: none;
+      border-radius: 20px;
 
       svg {
         width: 17px;
@@ -90,16 +107,44 @@
       }
 
       &-add {
+        width: 100%;
+        height: 40px;
+        box-shadow: 0 0 15px -5px #2e242c;
 
         svg {
           width: 30px;
           height: 30px;
         }
       }
+
+      &--inactive {
+        background-color: #605052;
+      }
     }
   }
 
   .counter-btn {
     font-size: 25px;
+  }
+
+  .shoping-group-edit {
+
+    &__title-input {
+      font-size: 35px;
+      font-weight: 500;
+    }
+
+    &__item-input {
+      font-weight: 300;
+    }
+
+    &__controls {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__button {
+      font-size: 15px;
+    }
   }
 }
